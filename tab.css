@@ -1,0 +1,24 @@
+.tab-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.tab-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    border-radius: 25px;
+    margin: 2rem;
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+}
+
+.tab-link:hover{
+    color: wheat;
+    cursor: pointer;
+    box-shadow:  0 15px 25px #bbb;
+}

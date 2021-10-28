@@ -1,0 +1,68 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 500px;
+    background-color: wheat;
+    margin: auto;
+    border-radius: 40px;
+    box-shadow: 0 15px 25px #bbb;
+    transition: 0.5s;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    
+}
+
+.form-title{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-label{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.form-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=submit]{
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: cadetblue;
+    color:  white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #70D6FF;
+    color: #456990;
+}
+
+#checkValidEmail{
+    font-size: 15px;
+}
+
+@media screen and (min-width: 780px) {
+    .form{
+        width: 30%;
+    }
+}

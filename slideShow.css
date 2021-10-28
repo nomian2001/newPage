@@ -1,0 +1,14 @@
+.carousel-item{
+    height: 30rem;
+    background: #777;
+    color: red;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    transition: transform 2s ease, opacity .5s ease-out
+}
+
+.carousel-control-prev-icon{
+    color: red;
+    background-color: red;
+}

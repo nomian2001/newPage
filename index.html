@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="slideShow.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="tab.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>Test Website</title>
+
+</head>
+<body>
+    <div class="container-lg">
+            <nav class="navbar navbar-dark navbar-expand-sm fixed-top nav-background">
+                <a href="#" class="navbar-brand">CREATIVE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavBar" aria-controls="collapseNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapseNavBar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">OUR STORY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">CONTACT US</a>
+                        </li>
+                    </ul>
+                    <div class="search-box">
+                        <input class="search-text" type="search" placeholder="Search" aria-label="Search">
+                        <a class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        <div id="slideShow" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slideShow" data-slide-to="0" class="active"></li>
+                <li data-target="#slideShow" data-slide-to="1"></li>
+                <li data-target="#slideShow" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url(./image1.jpg);">
+                    
+                </div>
+                <div class="carousel-item " style="background-image: url(./image2.jpg);">
+            
+                </div>
+                <div class="carousel-item " style="background-image: url(./image3.jpg);">
+                
+                </div>
+            </div>
+            <a class="carousel-control-prev " href="#slideShow" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon  " aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#slideShow" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+        <div class="body">
+            <div class="tab-container">
+                <div class="tab-link" onclick="openTab(event, 'groupCard')">My Card</div>
+                <div class="tab-link" onclick="openTab(event, 'form')">My Form</div>
+              </div>
+            <div class="body-content">
+                <div class="horizontal-line"></div>
+                <div class="body-title">Let's Go</div>
+                <div class="horizontal-line"></div>
+            </div>
+                
+            <div id="groupCard" class="group-card tab-content">
+                <div class="card-container">
+                    <div class="card-circle">
+                        <h2>01</h2>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusamus quod, at ex tempore dicta illo maxime quo saepe consectetur? Vel tenetur quam facilis vero voluptas maxime accusamus minus voluptates?</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-circle">
+                        <h2>02</h2>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusamus quod, at ex tempore dicta illo maxime quo saepe consectetur? Vel tenetur quam facilis vero voluptas maxime accusamus minus voluptates?</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-circle">
+                        <h2>03</h2>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores accusamus quod, at ex tempore dicta illo maxime quo saepe consectetur? Vel tenetur quam facilis vero voluptas maxime accusamus minus voluptates?</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div id="form" class="form tab-content">
+                <form>
+                    <div class="form-container form-title">Talking Form</div>
+                    <div class="form-container">
+                        <label for="username" class="form-label">Your Name</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your name">
+                    </div>
+                    <div class="form-container">
+                        <label for="email" class="form-label">Your email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <h4 id="checkValidEmail"></h4>
+                    </div>
+                    <div class="form-container">
+                        <label for="talk" class="form-label">What do you want to say</label>
+                        <textarea id="talk" name="talk" row="10" cols="20" placeholder="Talk to me"></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <div class="body-content">
+                <div class="horizontal-line"></div>
+                <div class="body-title">The end</div>
+                <div class="horizontal-line"></div>
+            </div>
+            
+        </div>
+        <footer class="footer w-100">
+            <div class="footer-title ">
+                <h4 class="footer-subtitle">Title Here</h4>
+                <div class="footer-title-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quasi laboriosam perferendis excepturi praesentium iure corrupti adipisci possimus suscipit ipsam, voluptatum, modi necessitatibus dolore eum quidem id, veritatis aperiam porro?
+                </div>
+                <div class="footer-title-icon">
+                    <i class="fab fa-facebook-square footer-icon"></i>
+                    <i class="fab fa-instagram footer-icon"></i>
+                    <i class="fab fa-twitter-square footer-icon"></i>
+                </div>
+            </div>
+            <div class="footer-title ">
+                <h4 class="footer-subtitle">About</h4>
+                <a href="#" class="footer-content text-decoration-none">History</a>
+                <a href="#" class="footer-content text-decoration-none">Our Team</a>
+                <a href="#" class="footer-content text-decoration-none">Brand Guildlines</a>
+                <a href="#" class="footer-content text-decoration-none">Terms & Condition</a>
+                <a href="#" class="footer-content text-decoration-none">Privacy Policy</a>
+            </div>
+            <div class="footer-title">
+                <h4 class="footer-subtitle">Services</h4>
+                <a href="#" class="footer-content text-decoration-none">How to Order</a>
+                <a href="#" class="footer-content text-decoration-none">Our Product</a>
+                <a href="#" class="footer-content text-decoration-none">Order Status</a>
+                <a href="#" class="footer-content text-decoration-none">Promo</a>
+                <a href="#" class="footer-content text-decoration-none">Payment Method</a>
+            </div>
+            <div class="footer-title">
+                <h4 class="footer-subtitle">Other</h4>
+                <a href="#" class="footer-content text-decoration-none">Contact Us</a>
+                <a href="#" class="footer-content text-decoration-none">Help</a>
+                <a href="#" class="footer-content text-decoration-none">Privacy</a>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

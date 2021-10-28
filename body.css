@@ -1,0 +1,37 @@
+.body-content{
+    margin: 3rem 6rem 2rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-line{
+    background-color:  #07B8ED;
+    width: 10rem;
+    height: 2px;
+    margin: 5px;
+}
+
+.body-title{
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 760px) {
+    .body-content{
+        margin: 1px;
+    }
+    
+    .body-title{
+        font-size: 25px;
+    }
+    .horizontal-line{
+        margin: 4px;
+    }
+
+}
