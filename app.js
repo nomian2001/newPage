@@ -52,8 +52,8 @@ email.addEventListener('input',() => {
     validEmail();
 })
 
-const submitBtn = document.querySelector('input[type=submit]')
-submitBtn.addEventListener('submit', (e) => {
+const submitForm = document.querySelector('form');
+form.addEventListener('submit', (e) => {
     e.preventDefault();
 })
 
